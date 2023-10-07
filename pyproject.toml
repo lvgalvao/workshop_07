@@ -11,6 +11,7 @@ packages = [{include = "workshop_07"}]
 python = "3.11.5"
 pandas = "^2.1.1"
 openpyxl = "^3.1.2"
+pytest = "^7.4.2"
 
 
 [build-system]
