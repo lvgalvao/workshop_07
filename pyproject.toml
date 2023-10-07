@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "workshop-07"
+version = "0.1.0"
+description = "consolidador de ETL"
+authors = ["Luciano Filho <lvgalvaofilho@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "workshop_07"}]
+
+[tool.poetry.dependencies]
+python = "3.11.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
