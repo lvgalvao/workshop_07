@@ -7,7 +7,7 @@ def df_fixture():
 
 @pytest.fixture
 def output_fixture():
-    return ("output", "output.xlsx")
+    return ("data/output/", "output.xlsx")
 
 from app.ETL.load import load_to_excel
 
@@ -18,7 +18,8 @@ def test_load_to_excel(df_fixture, output_fixture):
     # Arrange
     expected = "Arquivo salvo com sucesso"
 
-    # Act
+    # Act salve o result em um temp file
+
     result = load_to_excel(df_fixture, output_folder, output_file)
 
     # Assert
