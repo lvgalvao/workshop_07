@@ -5,7 +5,7 @@ description = "consolidador de ETL"
 authors = ["Luciano Filho <lvgalvaofilho@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "workshop_07"}]
+packages = [{ include = "workshop_07" }]
 
 [tool.poetry.dependencies]
 python = "3.11.5"
@@ -13,6 +13,14 @@ pandas = "^2.1.1"
 openpyxl = "^3.1.2"
 pytest = "^7.4.2"
 
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.12.0"
+
+[tool.isort]
+profile = "black"
+known_third_party = []
 
 [build-system]
 requires = ["poetry-core"]
